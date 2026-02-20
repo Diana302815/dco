@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dimensión Espejo · Inmobiliaria</title>
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ⚡ VIDEO DE FONDO - DIMENSIÓN ESPEJO (TÚ LO CREAS) -->
+  <iframe id="mirror-dimension"
+    src="https://www.youtube.com/embed/R3oXZcbn3Oc?autoplay=1&mute=1&loop=1&playlist=R3oXZcbn3Oc&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0"
+    frameborder="0"
+    allow="autoplay; fullscreen; encrypted-media"
+    allowfullscreen>
+</iframe>
+
+    <!-- 🎵 CONTROL DE MÚSICA -->
+    <div class="music-control">
+        <button id="music-toggle">
+            <i class="fas fa-music"></i>
+            <span id="music-status">Música: ON</span>
+        </button>
+        <audio id="background-music" loop>
+            <source src="assets/soundtrack.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- ✨ CAPA DE LUZ / ATMÓSFERA -->
+    <div class="atmosphere"></div>
+
+    <!-- 🧩 CONTENEDOR PRINCIPAL (TODAS LAS PANTALLAS EN UNA SOLA VISTA) -->
+    <main class="experience">
+
+        <!-- SECCIÓN 1: PREGUNTAS (8 PASOS VISIBLES UNO A LA VEZ) -->
+        <section id="question-section" class="section active">
+            
+            <div class="question-stage" id="stage-1">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 1/8</span>
+                    <h2>¿Cuál es tu principal objetivo al buscar una propiedad?</h2>
+                    <div class="options">
+                        <div class="option" data-value="3">Inversión a largo plazo</div>
+                        <div class="option" data-value="1">Vivienda principal</div>
+                        <div class="option" data-value="4">Propiedad vacacional</div>
+                        <div class="option" data-value="2">Alquiler inmediato</div>
+                    </div>
+                    <div class="progress-hint">Toca una opción para continuar</div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-2">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 2/8</span>
+                    <h2>¿Qué tipo de propiedad te atrae más?</h2>
+                    <div class="options">
+                        <div class="option" data-value="2">Apartamento moderno en zona urbana</div>
+                        <div class="option" data-value="4">Casa con jardín en las afueras</div>
+                        <div class="option" data-value="3">Loft en zona industrial renovada</div>
+                        <div class="option" data-value="1">Penthouse con vistas panorámicas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-3">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 3/8</span>
+                    <h2>¿Qué valoras más en una ubicación?</h2>
+                    <div class="options">
+                        <div class="option" data-value="4">Proximidad a centros de trabajo</div>
+                        <div class="option" data-value="1">Tranquilidad y espacios verdes</div>
+                        <div class="option" data-value="3">Cercanía a servicios y comercios</div>
+                        <div class="option" data-value="2">Conectividad con transporte público</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-4">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 4/8</span>
+                    <h2>¿Cómo describirías tu estilo de vida?</h2>
+                    <div class="options">
+                        <div class="option" data-value="1">Urbano y dinámico</div>
+                        <div class="option" data-value="3">Familiar y estable</div>
+                        <div class="option" data-value="4">Nómada digital</div>
+                        <div class="option" data-value="2">Relajado y contemplativo</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-5">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 5/8</span>
+                    <h2>¿Qué tamaño de propiedad buscas?</h2>
+                    <div class="options">
+                        <div class="option" data-value="2">Estudio o apartamento pequeño</div>
+                        <div class="option" data-value="1">Apartamento de 2-3 habitaciones</div>
+                        <div class="option" data-value="3">Casa familiar grande</div>
+                        <div class="option" data-value="4">Propiedad exclusiva con amplios espacios</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-6">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 6/8</span>
+                    <h2>¿Qué presupuesto tienes en mente?</h2>
+                    <div class="options">
+                        <div class="option" data-value="1">Menos de 200.000€</div>
+                        <div class="option" data-value="2">200.000€ - 400.000€</div>
+                        <div class="option" data-value="3">400.000€ - 800.000€</div>
+                        <div class="option" data-value="4">Más de 800.000€</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-7">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 7/8</span>
+                    <h2>¿Qué priorizas en una propiedad?</h2>
+                    <div class="options">
+                        <div class="option" data-value="3">Diseño arquitectónico</div>
+                        <div class="option" data-value="4">Eficiencia energética</div>
+                        <div class="option" data-value="1">Ubicación privilegiada</div>
+                        <div class="option" data-value="2">Calidad de los materiales</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question-stage" id="stage-8">
+                <div class="question-card">
+                    <span class="stage-number">PREGUNTA 8/8</span>
+                    <h2>¿Cuándo planeas realizar la compra?</h2>
+                    <div class="options">
+                        <div class="option" data-value="4">Inmediatamente</div>
+                        <div class="option" data-value="3">En los próximos 3 meses</div>
+                        <div class="option" data-value="2">En los próximos 6 meses</div>
+                        <div class="option" data-value="1">Solo explorando opciones</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROGRESO VISUAL -->
+            <div class="progress-tracker">
+                <div class="progress-fill" id="progress-fill"></div>
+                <div class="progress-steps">
+                    <span class="step active">1</span>
+                    <span class="step">2</span>
+                    <span class="step">3</span>
+                    <span class="step">4</span>
+                    <span class="step">5</span>
+                    <span class="step">6</span>
+                    <span class="step">7</span>
+                    <span class="step">8</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECCIÓN 2: CAPTURA DE DATOS -->
+        <section id="data-section" class="section">
+            <div class="data-card">
+                <span class="stage-number">ÚLTIMO PASO</span>
+                <h2>Completa tus datos para ver tu diagnóstico personalizado</h2>
+                <form id="user-data-form">
+                    <input type="text" id="name" placeholder="Nombre completo" required>
+                    <input type="email" id="email" placeholder="Correo electrónico" required>
+                    <input type="tel" id="phone" placeholder="Teléfono" required>
+                    <input type="text" id="city" placeholder="Ciudad de interés" required>
+                    <button type="submit" class="btn-primary">
+                        <span>Ver mi diagnóstico</span>
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: RESULTADO + AGENDAR -->
+        <section id="result-section" class="section">
+            <div class="result-card">
+                <h1>Tu Propiedad en la Dimensión Perfecta</h1>
+                <div class="score-badge">
+                    Puntuación: <span id="score-value">0</span>/32
+                </div>
+                <p id="result-description">
+                    <!-- Se llena dinámicamente -->
+                </p>
+                <button id="schedule-visit" class="btn-schedule">
+                    <i class="fas fa-calendar-alt"></i>
+                    Agendar Visita Personalizada
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
